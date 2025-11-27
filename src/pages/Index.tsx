@@ -214,6 +214,13 @@ const Index = () => {
             
             <div className="mb-8">
               <h3 className="text-2xl font-semibold text-center mb-6">Инъекционные методики</h3>
+              <div className="mb-8 rounded-lg overflow-hidden shadow-lg max-w-4xl mx-auto">
+                <img 
+                  src="https://cdn.poehali.dev/projects/a237247e-eafd-4d28-ad02-d1e2f364317d/files/ef810a02-4e63-4976-99f9-3b2aecbb2796.jpg" 
+                  alt="Инъекционная терапия" 
+                  className="w-full h-64 object-cover"
+                />
+              </div>
               <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
               <Card className="overflow-hidden">
                 <div className="bg-gradient-to-br from-primary/10 to-accent/10 p-6">
@@ -285,6 +292,13 @@ const Index = () => {
 
             <div className="mt-16">
               <h3 className="text-2xl font-semibold text-center mb-6">Физиотерапевтические методы</h3>
+              <div className="mb-8 rounded-lg overflow-hidden shadow-lg max-w-4xl mx-auto">
+                <img 
+                  src="https://cdn.poehali.dev/projects/a237247e-eafd-4d28-ad02-d1e2f364317d/files/924f33a0-1f36-414e-9a62-0f1068e94f18.jpg" 
+                  alt="Физиотерапевтическое оборудование" 
+                  className="w-full h-64 object-cover"
+                />
+              </div>
               <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
                 <Card className="overflow-hidden">
                   <div className="bg-gradient-to-br from-primary/10 to-secondary/20 p-6">
@@ -527,8 +541,16 @@ const Index = () => {
               </p>
             </div>
             <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-              <Card>
-                <CardContent className="p-6 space-y-6">
+              <div className="space-y-6">
+                <div className="rounded-lg overflow-hidden shadow-lg">
+                  <img 
+                    src="https://cdn.poehali.dev/projects/a237247e-eafd-4d28-ad02-d1e2f364317d/files/0712ba0f-9546-40f7-bd56-0ac0e20888a3.jpg" 
+                    alt="Регистратура клиники" 
+                    className="w-full h-64 object-cover"
+                  />
+                </div>
+                <Card>
+                  <CardContent className="p-6 space-y-6">
                   <div className="flex items-start gap-4">
                     <div className="h-12 w-12 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
                       <Icon name="MapPin" className="text-primary" size={24} />
@@ -563,6 +585,7 @@ const Index = () => {
                   </div>
                 </CardContent>
               </Card>
+              </div>
               <Card className="bg-gradient-to-br from-primary/5 to-accent/5">
                 <CardContent className="p-6">
                   <h3 className="text-xl font-semibold mb-4">Записаться на приём</h3>
