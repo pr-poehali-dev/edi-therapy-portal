@@ -75,6 +75,13 @@ const Index = () => {
                 </div>
               </div>
               <div className="relative">
+                <div className="mb-6 rounded-lg overflow-hidden shadow-xl">
+                  <img 
+                    src="https://cdn.poehali.dev/projects/a237247e-eafd-4d28-ad02-d1e2f364317d/files/57243eaa-b027-4b9f-98b8-675bf2d678eb.jpg" 
+                    alt="Современная клиника" 
+                    className="w-full h-64 object-cover"
+                  />
+                </div>
                 <Card className="p-6 bg-card/50 backdrop-blur">
                   <CardContent className="space-y-4 p-0">
                     <div className="flex items-center gap-4">
@@ -121,6 +128,13 @@ const Index = () => {
                 Понимание причины проблемы — первый шаг к её успешному решению
               </p>
             </div>
+            <div className="mb-12 rounded-lg overflow-hidden shadow-lg max-w-4xl mx-auto">
+              <img 
+                src="https://cdn.poehali.dev/projects/a237247e-eafd-4d28-ad02-d1e2f364317d/files/c3a3c452-1b1a-4334-9133-5089f3399486.jpg" 
+                alt="Консультация врача" 
+                className="w-full h-80 object-cover"
+              />
+            </div>
             <div className="grid md:grid-cols-3 gap-6">
               {[
                 {
@@ -160,6 +174,13 @@ const Index = () => {
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
                 Комплексное обследование для точного определения причин и выбора оптимального метода лечения
               </p>
+            </div>
+            <div className="mb-12 rounded-lg overflow-hidden shadow-lg max-w-4xl mx-auto">
+              <img 
+                src="https://cdn.poehali.dev/projects/a237247e-eafd-4d28-ad02-d1e2f364317d/files/beb8424d-4f97-4c5f-8d55-c7363e060b1f.jpg" 
+                alt="Медицинское оборудование" 
+                className="w-full h-80 object-cover"
+              />
             </div>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
               {[
