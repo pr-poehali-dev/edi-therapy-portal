@@ -29,6 +29,8 @@ const Index = () => {
               { id: "types", label: "Виды ЭД" },
               { id: "diagnostics", label: "Диагностика" },
               { id: "treatment", label: "Лечение" },
+              { id: "prices", label: "Цены" },
+              { id: "faq", label: "Вопросы" },
               { id: "reviews", label: "Отзывы" },
               { id: "contacts", label: "Контакты" }
             ].map(item => (
@@ -185,10 +187,13 @@ const Index = () => {
             <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold mb-4">Современные методы лечения</h2>
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                Безоперационные инъекционные методики с высокой эффективностью
+                Комплексный подход: инъекционные методики и физиотерапия
               </p>
             </div>
-            <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+            
+            <div className="mb-8">
+              <h3 className="text-2xl font-semibold text-center mb-6">Инъекционные методики</h3>
+              <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
               <Card className="overflow-hidden">
                 <div className="bg-gradient-to-br from-primary/10 to-accent/10 p-6">
                   <div className="h-16 w-16 rounded-full bg-primary flex items-center justify-center mb-4">
@@ -254,7 +259,80 @@ const Index = () => {
                   </div>
                 </CardContent>
               </Card>
+              </div>
             </div>
+
+            <div className="mt-16">
+              <h3 className="text-2xl font-semibold text-center mb-6">Физиотерапевтические методы</h3>
+              <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                <Card className="overflow-hidden">
+                  <div className="bg-gradient-to-br from-primary/10 to-secondary/20 p-6">
+                    <div className="h-16 w-16 rounded-full bg-primary flex items-center justify-center mb-4">
+                      <Icon name="Radio" className="text-primary-foreground" size={32} />
+                    </div>
+                    <h3 className="text-2xl font-bold mb-2">Ударно-волновая терапия</h3>
+                    <p className="text-sm text-muted-foreground">Неинвазивное восстановление</p>
+                  </div>
+                  <CardContent className="p-6 space-y-4">
+                    <p className="text-muted-foreground">
+                      Воздействие низкоинтенсивными ударными волнами улучшает кровоснабжение и стимулирует рост новых сосудов.
+                    </p>
+                    <div className="space-y-2">
+                      <div className="flex items-start gap-2">
+                        <Icon name="Check" className="text-primary mt-1 flex-shrink-0" size={18} />
+                        <span className="text-sm">Безболезненная процедура</span>
+                      </div>
+                      <div className="flex items-start gap-2">
+                        <Icon name="Check" className="text-primary mt-1 flex-shrink-0" size={18} />
+                        <span className="text-sm">Курс 6-12 процедур</span>
+                      </div>
+                      <div className="flex items-start gap-2">
+                        <Icon name="Check" className="text-primary mt-1 flex-shrink-0" size={18} />
+                        <span className="text-sm">Улучшение естественной эрекции</span>
+                      </div>
+                      <div className="flex items-start gap-2">
+                        <Icon name="Check" className="text-primary mt-1 flex-shrink-0" size={18} />
+                        <span className="text-sm">Эффект до 2 лет</span>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+
+                <Card className="overflow-hidden">
+                  <div className="bg-gradient-to-br from-accent/20 to-secondary/20 p-6">
+                    <div className="h-16 w-16 rounded-full bg-accent flex items-center justify-center mb-4">
+                      <Icon name="Heart" className="text-accent-foreground" size={32} />
+                    </div>
+                    <h3 className="text-2xl font-bold mb-2">Усиленная наружная контрпульсация</h3>
+                    <p className="text-sm text-muted-foreground">Улучшение кровообращения</p>
+                  </div>
+                  <CardContent className="p-6 space-y-4">
+                    <p className="text-muted-foreground">
+                      Улучшение кровообращения в органах малого таза с помощью пневматических манжет.
+                    </p>
+                    <div className="space-y-2">
+                      <div className="flex items-start gap-2">
+                        <Icon name="Check" className="text-primary mt-1 flex-shrink-0" size={18} />
+                        <span className="text-sm">Комфортная процедура</span>
+                      </div>
+                      <div className="flex items-start gap-2">
+                        <Icon name="Check" className="text-primary mt-1 flex-shrink-0" size={18} />
+                        <span className="text-sm">Улучшает работу сосудов</span>
+                      </div>
+                      <div className="flex items-start gap-2">
+                        <Icon name="Check" className="text-primary mt-1 flex-shrink-0" size={18} />
+                        <span className="text-sm">Снижает риск сердечно-сосудистых заболеваний</span>
+                      </div>
+                      <div className="flex items-start gap-2">
+                        <Icon name="Check" className="text-primary mt-1 flex-shrink-0" size={18} />
+                        <span className="text-sm">Общее оздоровление организма</span>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+              </div>
+            </div>
+
             <div className="text-center mt-12">
               <Card className="max-w-3xl mx-auto bg-gradient-to-r from-primary/5 to-accent/5">
                 <CardContent className="p-8">
@@ -267,6 +345,104 @@ const Index = () => {
                   </p>
                 </CardContent>
               </Card>
+            </div>
+          </div>
+        </section>
+
+        <section id="prices" className="py-20 bg-secondary/20">
+          <div className="container">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">Цены на услуги</h2>
+              <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+                Прозрачное ценообразование без скрытых платежей
+              </p>
+            </div>
+            <div className="max-w-4xl mx-auto space-y-4">
+              {[
+                { service: "Первичная консультация уролога-андролога", price: "3 500" },
+                { service: "Повторная консультация", price: "2 500" },
+                { service: "Комплексная диагностика ЭД", price: "12 000" },
+                { service: "Интракавернозная терапия (1 процедура)", price: "4 500" },
+                { service: "PRP-терапия (1 процедура)", price: "15 000" },
+                { service: "Ударно-волновая терапия (1 сеанс)", price: "5 000" },
+                { service: "УВТ (курс 10 процедур)", price: "45 000" },
+                { service: "Усиленная наружная контрпульсация (1 сеанс)", price: "3 000" },
+                { service: "Контрпульсация (курс 20 процедур)", price: "50 000" }
+              ].map((item, idx) => (
+                <Card key={idx}>
+                  <CardContent className="p-6 flex justify-between items-center">
+                    <span className="font-medium">{item.service}</span>
+                    <span className="text-2xl font-bold text-primary">{item.price} ₽</span>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+            <div className="text-center mt-8">
+              <Card className="max-w-3xl mx-auto bg-gradient-to-r from-accent/10 to-primary/10">
+                <CardContent className="p-6">
+                  <Icon name="BadgePercent" className="text-primary mx-auto mb-3" size={32} />
+                  <h3 className="text-xl font-semibold mb-2">Программы лечения</h3>
+                  <p className="text-muted-foreground">
+                    При покупке комплексных программ лечения предоставляются скидки до 15%. 
+                    Возможна рассрочка платежа. Узнайте подробности у администратора.
+                  </p>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+        </section>
+
+        <section id="faq" className="py-20">
+          <div className="container">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">Частые вопросы</h2>
+              <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+                Ответы на важные вопросы о диагностике и лечении
+              </p>
+            </div>
+            <div className="max-w-3xl mx-auto space-y-4">
+              {[
+                {
+                  question: "Как понять, что пора обратиться к врачу?",
+                  answer: "Если проблемы с эрекцией возникают регулярно в течение 3 месяцев или более, это повод записаться на консультацию. Ранняя диагностика позволяет выявить причину и начать эффективное лечение."
+                },
+                {
+                  question: "Безопасны ли инъекционные методики?",
+                  answer: "Да, интракавернозная терапия и PRP-терапия безопасны при правильном применении. В нашей клинике используются только сертифицированные препараты, а процедуры проводятся опытными специалистами. Перед назначением проводится полная диагностика."
+                },
+                {
+                  question: "Сколько времени занимает лечение?",
+                  answer: "Продолжительность зависит от выбранного метода. Интракавернозная терапия дает мгновенный эффект. PRP-терапия и ударно-волновая терапия требуют курсового лечения — результат появляется через 4-6 недель и сохраняется длительное время."
+                },
+                {
+                  question: "Гарантируете ли вы конфиденциальность?",
+                  answer: "Абсолютно. Мы строго соблюдаем врачебную тайну. Все данные пациентов защищены, консультации проходят в отдельных кабинетах, возможна запись под псевдонимом. Ваша конфиденциальность — наш приоритет."
+                },
+                {
+                  question: "Можно ли совмещать разные методы лечения?",
+                  answer: "Да, комплексный подход часто дает наилучшие результаты. После диагностики врач составит индивидуальную программу, которая может включать несколько методик для достижения максимального эффекта."
+                },
+                {
+                  question: "Что делать, если таблетки не помогают?",
+                  answer: "Если пероральные препараты неэффективны, инъекционные методики и физиотерапия — отличная альтернатива. Эти методы работают по другому принципу и помогают даже в сложных случаях, когда таблетки бессильны."
+                }
+              ].map((item, idx) => (
+                <Card key={idx}>
+                  <CardContent className="p-6">
+                    <div className="flex gap-4">
+                      <div className="flex-shrink-0">
+                        <div className="h-10 w-10 rounded-full bg-primary/10 flex items-center justify-center">
+                          <Icon name="HelpCircle" className="text-primary" size={20} />
+                        </div>
+                      </div>
+                      <div className="space-y-2">
+                        <h3 className="text-lg font-semibold">{item.question}</h3>
+                        <p className="text-muted-foreground">{item.answer}</p>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+              ))}
             </div>
           </div>
         </section>
