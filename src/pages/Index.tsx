@@ -566,8 +566,10 @@ const Index = () => {
                     </div>
                     <div>
                       <h3 className="font-semibold mb-1">Телефон</h3>
-                      <a href="tel:+74951234567" className="text-primary hover:underline">+7 (495) 123-45-67</a>
-                      <p className="text-sm text-muted-foreground mt-1">Ежедневно с 9:00 до 20:00</p>
+                      <a href="tel:+74957083800" className="text-primary hover:underline block">+7 (495) 708-38-00</a>
+                      <p className="text-sm text-muted-foreground">Ежедневно с 8:00 до 20:00</p>
+                      <a href="tel:+79670223553" className="text-primary hover:underline block mt-2">+7 (967) 022-35-53</a>
+                      <p className="text-sm text-muted-foreground">Дежурный телефон с 20:00 до 00:00</p>
                     </div>
                   </div>
                   <Separator />
