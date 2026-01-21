@@ -58,7 +58,6 @@ const Index = () => {
               <div className="space-y-6">
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight">
                   Эффективное лечение эректильной дисфункции
-                  <span className="block text-primary mt-2">Профессора М.Е. Чалого</span>
                 </h1>
                 <p className="text-xl text-muted-foreground">
                   Современное лечение эректильной дисфункции без хирургического вмешательства. 
