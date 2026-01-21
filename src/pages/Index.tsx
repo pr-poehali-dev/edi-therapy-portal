@@ -609,7 +609,7 @@ const Index = () => {
                     <div>
                       <label className="text-sm font-medium mb-2 block">Удобное время</label>
                       <select className="w-full px-4 py-2 rounded-md border border-input bg-background">
-                        <option>Утро (9:00 - 12:00)</option>
+                        <option>Утро (8:00 - 12:00)</option>
                         <option>День (12:00 - 16:00)</option>
                         <option>Вечер (16:00 - 20:00)</option>
                       </select>
