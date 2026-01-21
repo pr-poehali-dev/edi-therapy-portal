@@ -98,8 +98,8 @@ const Index = () => {
                         <Icon name="Award" className="text-primary" size={24} />
                       </div>
                       <div>
-                        <h3 className="font-semibold">Опыт более 25 лет</h3>
-                        <p className="text-sm text-muted-foreground">Профессор М.Е. Чалый</p>
+                        <h3 className="font-semibold">Опыт работы более 27 лет</h3>
+                        <p className="text-sm text-muted-foreground">Профессора М.Е. Чалого и его коллег</p>
                       </div>
                     </div>
                     <Separator />
