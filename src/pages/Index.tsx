@@ -642,14 +642,18 @@ const Index = () => {
               </p>
             </div>
             <div className="flex gap-4">
-              <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
-                <Icon name="Facebook" size={20} />
+              <a href="https://vk.com/clinic_for_man" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M15.07 2H8.93C3.33 2 2 3.33 2 8.93v6.14C2 20.67 3.33 22 8.93 22h6.14c5.6 0 6.93-1.33 6.93-6.93V8.93C22 3.33 20.67 2 15.07 2zm3.38 14.03h-1.37c-.63 0-.82-.5-1.94-1.63-1-1-1.44-1.14-1.69-1.14-.35 0-.44.09-.44.54v1.48c0 .4-.13.64-1.18.64-1.75 0-3.7-.96-5.07-2.75-2.04-2.6-2.6-4.55-2.6-4.94 0-.25.09-.49.54-.49h1.37c.4 0 .56.18.71.61.75 2.15 2 4.03 2.51 4.03.19 0 .28-.09.28-.59v-2.31c-.06-1.09-.64-1.18-.64-1.57 0-.2.16-.4.42-.4h2.15c.34 0 .46.18.46.58v3.11c0 .34.15.46.25.46.19 0 .37-.12.75-.49 1.15-1.29 1.97-3.29 1.97-3.29.11-.23.29-.45.72-.45h1.37c.46 0 .56.24.46.57-.15.8-1.51 3.07-1.51 3.07-.15.25-.21.36 0 .65.15.21.64.63 1.07 1.13.77.88 1.37 1.62 1.53 2.13.16.51-.09.77-.59.77z"/>
+                </svg>
               </a>
-              <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
-                <Icon name="Instagram" size={20} />
+              <a href="https://t.me/androlog_kmz" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.74-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z"/>
+                </svg>
               </a>
-              <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
-                <Icon name="Youtube" size={20} />
+              <a href="https://rutube.ru/channel/74856577/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
+                <Icon name="Video" size={20} />
               </a>
             </div>
           </div>
