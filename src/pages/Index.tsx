@@ -556,8 +556,7 @@ const Index = () => {
                     </div>
                     <div>
                       <h3 className="font-semibold mb-1">Адрес клиники</h3>
-                      <p className="text-muted-foreground">Москва, ул. Примерная, д. 123</p>
-                      <p className="text-sm text-muted-foreground mt-1">м. Примерная, 5 минут пешком</p>
+                      <p className="text-muted-foreground">г. Москва, ул. Россолимо, д. 11А, 13 этаж</p>
                     </div>
                   </div>
                   <Separator />
@@ -568,7 +567,7 @@ const Index = () => {
                     <div>
                       <h3 className="font-semibold mb-1">Телефон</h3>
                       <a href="tel:+74951234567" className="text-primary hover:underline">+7 (495) 123-45-67</a>
-                      <p className="text-sm text-muted-foreground mt-1">Ежедневно с 9:00 до 21:00</p>
+                      <p className="text-sm text-muted-foreground mt-1">Ежедневно с 9:00 до 20:00</p>
                     </div>
                   </div>
                   <Separator />
@@ -578,7 +577,7 @@ const Index = () => {
                     </div>
                     <div>
                       <h3 className="font-semibold mb-1">Email</h3>
-                      <a href="mailto:info@clinic.ru" className="text-primary hover:underline">info@clinic.ru</a>
+                      <a href="mailto:info@androlog.ru" className="text-primary hover:underline">info@androlog.ru</a>
                       <p className="text-sm text-muted-foreground mt-1">Ответим в течение 24 часов</p>
                     </div>
                   </div>
@@ -610,7 +609,7 @@ const Index = () => {
                       <select className="w-full px-4 py-2 rounded-md border border-input bg-background">
                         <option>Утро (9:00 - 12:00)</option>
                         <option>День (12:00 - 16:00)</option>
-                        <option>Вечер (16:00 - 21:00)</option>
+                        <option>Вечер (16:00 - 20:00)</option>
                       </select>
                     </div>
                     <Button type="submit" className="w-full" size="lg">
