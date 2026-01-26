@@ -127,12 +127,28 @@ const Index = () => {
                 Понимание причины проблемы — первый шаг к её успешному решению
               </p>
             </div>
-            <div className="mb-12 rounded-lg overflow-hidden shadow-lg max-w-4xl mx-auto">
-              <img 
-                src="https://cdn.poehali.dev/projects/a237247e-eafd-4d28-ad02-d1e2f364317d/files/c3a3c452-1b1a-4334-9133-5089f3399486.jpg" 
-                alt="Консультация врача" 
-                className="w-full h-80 object-cover"
-              />
+            <div className="grid md:grid-cols-3 gap-6 mb-8">
+              <div className="rounded-lg overflow-hidden shadow-lg">
+                <img 
+                  src="https://cdn.poehali.dev/projects/a237247e-eafd-4d28-ad02-d1e2f364317d/files/ad077928-5ace-4d7c-87f6-79a134b1a061.jpg" 
+                  alt="Консультация врача" 
+                  className="w-full aspect-[4/3] object-cover"
+                />
+              </div>
+              <div className="rounded-lg overflow-hidden shadow-lg">
+                <img 
+                  src="https://cdn.poehali.dev/projects/a237247e-eafd-4d28-ad02-d1e2f364317d/files/3929e40e-b710-40d0-9ceb-e7526c62dec0.jpg" 
+                  alt="Психогенные факторы" 
+                  className="w-full aspect-[4/3] object-cover"
+                />
+              </div>
+              <div className="rounded-lg overflow-hidden shadow-lg">
+                <img 
+                  src="https://cdn.poehali.dev/projects/a237247e-eafd-4d28-ad02-d1e2f364317d/files/cec10daf-202a-459c-b354-b09a55af948f.jpg" 
+                  alt="Органические причины" 
+                  className="w-full aspect-[4/3] object-cover"
+                />
+              </div>
             </div>
             <div className="grid md:grid-cols-3 gap-6">
               {[
@@ -174,12 +190,28 @@ const Index = () => {
                 Комплексное обследование для точного определения причин и выбора оптимального метода лечения
               </p>
             </div>
-            <div className="mb-12 rounded-lg overflow-hidden shadow-lg max-w-4xl mx-auto">
-              <img 
-                src="https://cdn.poehali.dev/projects/a237247e-eafd-4d28-ad02-d1e2f364317d/files/beb8424d-4f97-4c5f-8d55-c7363e060b1f.jpg" 
-                alt="Медицинское оборудование" 
-                className="w-full h-80 object-cover"
-              />
+            <div className="grid md:grid-cols-3 gap-6 mb-8">
+              <div className="rounded-lg overflow-hidden shadow-lg">
+                <img 
+                  src="https://cdn.poehali.dev/projects/a237247e-eafd-4d28-ad02-d1e2f364317d/files/5e60bf78-7325-46c0-ba58-0b720b989fbb.jpg" 
+                  alt="УЗИ диагностика" 
+                  className="w-full aspect-[4/3] object-cover"
+                />
+              </div>
+              <div className="rounded-lg overflow-hidden shadow-lg">
+                <img 
+                  src="https://cdn.poehali.dev/projects/a237247e-eafd-4d28-ad02-d1e2f364317d/files/f0c257ca-cced-4778-a882-c511f2bc2e2e.jpg" 
+                  alt="Лабораторная диагностика" 
+                  className="w-full aspect-[4/3] object-cover"
+                />
+              </div>
+              <div className="rounded-lg overflow-hidden shadow-lg">
+                <img 
+                  src="https://cdn.poehali.dev/projects/a237247e-eafd-4d28-ad02-d1e2f364317d/files/d6e0f777-e5e6-4382-a174-4af6adfe8976.jpg" 
+                  alt="Психологическое тестирование" 
+                  className="w-full aspect-[4/3] object-cover"
+                />
+              </div>
             </div>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
               {[
@@ -213,12 +245,21 @@ const Index = () => {
             
             <div className="mb-8">
               <h3 className="text-2xl font-semibold text-center mb-6">Инъекционные методики</h3>
-              <div className="mb-8 rounded-lg overflow-hidden shadow-lg max-w-4xl mx-auto">
-                <img 
-                  src="https://cdn.poehali.dev/projects/a237247e-eafd-4d28-ad02-d1e2f364317d/files/ef810a02-4e63-4976-99f9-3b2aecbb2796.jpg" 
-                  alt="Инъекционная терапия" 
-                  className="w-full h-64 object-cover"
-                />
+              <div className="grid md:grid-cols-2 gap-6 mb-8">
+                <div className="rounded-lg overflow-hidden shadow-lg">
+                  <img 
+                    src="https://cdn.poehali.dev/projects/a237247e-eafd-4d28-ad02-d1e2f364317d/files/bff3fe9f-f92c-444f-86f9-5acb4434c720.jpg" 
+                    alt="Интракавернозная терапия" 
+                    className="w-full aspect-[4/3] object-cover"
+                  />
+                </div>
+                <div className="rounded-lg overflow-hidden shadow-lg">
+                  <img 
+                    src="https://cdn.poehali.dev/projects/a237247e-eafd-4d28-ad02-d1e2f364317d/files/bc758557-22c0-4102-9a44-82d1291f5f2a.jpg" 
+                    alt="PRP-терапия" 
+                    className="w-full aspect-[4/3] object-cover"
+                  />
+                </div>
               </div>
               <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
               <Card className="overflow-hidden">
@@ -291,12 +332,21 @@ const Index = () => {
 
             <div className="mt-16">
               <h3 className="text-2xl font-semibold text-center mb-6">Физиотерапевтические методы</h3>
-              <div className="mb-8 rounded-lg overflow-hidden shadow-lg max-w-4xl mx-auto">
-                <img 
-                  src="https://cdn.poehali.dev/projects/a237247e-eafd-4d28-ad02-d1e2f364317d/files/924f33a0-1f36-414e-9a62-0f1068e94f18.jpg" 
-                  alt="Физиотерапевтическое оборудование" 
-                  className="w-full h-64 object-cover"
-                />
+              <div className="grid md:grid-cols-2 gap-6 mb-8">
+                <div className="rounded-lg overflow-hidden shadow-lg">
+                  <img 
+                    src="https://cdn.poehali.dev/projects/a237247e-eafd-4d28-ad02-d1e2f364317d/files/ca07dfe4-e9b0-4c45-89bc-af333da6e6b7.jpg" 
+                    alt="Ударно-волновая терапия" 
+                    className="w-full aspect-[4/3] object-cover"
+                  />
+                </div>
+                <div className="rounded-lg overflow-hidden shadow-lg">
+                  <img 
+                    src="https://cdn.poehali.dev/projects/a237247e-eafd-4d28-ad02-d1e2f364317d/files/ecb285c6-cbab-4d54-ba52-b3445655a53b.jpg" 
+                    alt="Контрпульсация" 
+                    className="w-full aspect-[4/3] object-cover"
+                  />
+                </div>
               </div>
               <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
                 <Card className="overflow-hidden">
