@@ -239,8 +239,9 @@ const Index = () => {
                   className="w-full aspect-[16/6] object-cover object-center"
                 />
               </motion.div>
-              <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-              <Card className="overflow-hidden">
+              <motion.div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto" {...staggerContainer}>
+              <motion.div {...fadeInUp}>
+                <Card className="overflow-hidden h-full">
                 <div className="bg-gradient-to-br from-primary/10 to-accent/10 p-6">
                   <div className="h-16 w-16 rounded-full bg-primary flex items-center justify-center mb-4">
                     <Icon name="Syringe" className="text-primary-foreground" size={32} />
@@ -271,9 +272,11 @@ const Index = () => {
                     </div>
                   </div>
                 </CardContent>
-              </Card>
+                </Card>
+              </motion.div>
 
-              <Card className="overflow-hidden">
+              <motion.div {...fadeInUp}>
+                <Card className="overflow-hidden h-full">
                 <div className="bg-gradient-to-br from-accent/20 to-primary/10 p-6">
                   <div className="h-16 w-16 rounded-full bg-accent flex items-center justify-center mb-4">
                     <Icon name="Droplet" className="text-accent-foreground" size={32} />
@@ -304,21 +307,23 @@ const Index = () => {
                     </div>
                   </div>
                 </CardContent>
-              </Card>
-              </div>
+                </Card>
+              </motion.div>
+              </motion.div>
             </div>
 
             <div className="mt-16">
-              <h3 className="text-2xl font-semibold text-center mb-6">Физиотерапевтические методы</h3>
-              <div className="mb-8 rounded-lg overflow-hidden shadow-lg max-w-4xl mx-auto">
+              <motion.h3 className="text-2xl font-semibold text-center mb-6" {...fadeInUp}>Физиотерапевтические методы</motion.h3>
+              <motion.div className="mb-8 rounded-lg overflow-hidden shadow-lg max-w-4xl mx-auto" {...fadeInUp}>
                 <img 
                   src="https://cdn.poehali.dev/projects/a237247e-eafd-4d28-ad02-d1e2f364317d/bucket/06ea1f63-1109-41f5-b224-cf012d06e0b4.png" 
                   alt="Физиотерапевтическое оборудование" 
                   className="w-full aspect-[16/6] object-cover object-center"
                 />
-              </div>
-              <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-                <Card className="overflow-hidden">
+              </motion.div>
+              <motion.div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto" {...staggerContainer}>
+                <motion.div {...fadeInUp}>
+                  <Card className="overflow-hidden h-full">
                   <div className="bg-gradient-to-br from-primary/10 to-secondary/20 p-6">
                     <div className="h-16 w-16 rounded-full bg-primary flex items-center justify-center mb-4">
                       <Icon name="Radio" className="text-primary-foreground" size={32} />
@@ -349,44 +354,47 @@ const Index = () => {
                       </div>
                     </div>
                   </CardContent>
-                </Card>
+                  </Card>
+                </motion.div>
 
-                <Card className="overflow-hidden">
-                  <div className="bg-gradient-to-br from-accent/20 to-secondary/20 p-6">
-                    <div className="h-16 w-16 rounded-full bg-accent flex items-center justify-center mb-4">
-                      <Icon name="Heart" className="text-accent-foreground" size={32} />
+                <motion.div {...fadeInUp}>
+                  <Card className="overflow-hidden h-full">
+                    <div className="bg-gradient-to-br from-accent/20 to-secondary/20 p-6">
+                      <div className="h-16 w-16 rounded-full bg-accent flex items-center justify-center mb-4">
+                        <Icon name="Heart" className="text-accent-foreground" size={32} />
+                      </div>
+                      <h3 className="text-2xl font-bold mb-2">Усиленная наружная контрпульсация</h3>
+                      <p className="text-sm text-muted-foreground">Улучшение кровообращения</p>
                     </div>
-                    <h3 className="text-2xl font-bold mb-2">Усиленная наружная контрпульсация</h3>
-                    <p className="text-sm text-muted-foreground">Улучшение кровообращения</p>
-                  </div>
-                  <CardContent className="p-6 space-y-4">
-                    <p className="text-muted-foreground">
-                      Улучшение кровообращения в органах малого таза с помощью пневматических манжет.
-                    </p>
-                    <div className="space-y-2">
-                      <div className="flex items-start gap-2">
-                        <Icon name="Check" className="text-primary mt-1 flex-shrink-0" size={18} />
-                        <span className="text-sm">Комфортная процедура</span>
+                    <CardContent className="p-6 space-y-4">
+                      <p className="text-muted-foreground">
+                        Улучшение кровообращения в органах малого таза с помощью пневматических манжет.
+                      </p>
+                      <div className="space-y-2">
+                        <div className="flex items-start gap-2">
+                          <Icon name="Check" className="text-primary mt-1 flex-shrink-0" size={18} />
+                          <span className="text-sm">Комфортная процедура</span>
+                        </div>
+                        <div className="flex items-start gap-2">
+                          <Icon name="Check" className="text-primary mt-1 flex-shrink-0" size={18} />
+                          <span className="text-sm">Улучшает работу сосудов</span>
+                        </div>
+                        <div className="flex items-start gap-2">
+                          <Icon name="Check" className="text-primary mt-1 flex-shrink-0" size={18} />
+                          <span className="text-sm">Снижает риск сердечно-сосудистых заболеваний</span>
+                        </div>
+                        <div className="flex items-start gap-2">
+                          <Icon name="Check" className="text-primary mt-1 flex-shrink-0" size={18} />
+                          <span className="text-sm">Общее оздоровление организма</span>
+                        </div>
                       </div>
-                      <div className="flex items-start gap-2">
-                        <Icon name="Check" className="text-primary mt-1 flex-shrink-0" size={18} />
-                        <span className="text-sm">Улучшает работу сосудов</span>
-                      </div>
-                      <div className="flex items-start gap-2">
-                        <Icon name="Check" className="text-primary mt-1 flex-shrink-0" size={18} />
-                        <span className="text-sm">Снижает риск сердечно-сосудистых заболеваний</span>
-                      </div>
-                      <div className="flex items-start gap-2">
-                        <Icon name="Check" className="text-primary mt-1 flex-shrink-0" size={18} />
-                        <span className="text-sm">Общее оздоровление организма</span>
-                      </div>
-                    </div>
-                  </CardContent>
-                </Card>
-              </div>
+                    </CardContent>
+                  </Card>
+                </motion.div>
+              </motion.div>
             </div>
 
-            <div className="text-center mt-12">
+            <motion.div className="text-center mt-12" {...fadeInUp}>
               <Card className="max-w-3xl mx-auto bg-gradient-to-r from-primary/5 to-accent/5">
                 <CardContent className="p-8">
                   <Icon name="Info" className="text-primary mx-auto mb-4" size={32} />
@@ -398,19 +406,19 @@ const Index = () => {
                   </p>
                 </CardContent>
               </Card>
-            </div>
+            </motion.div>
           </div>
         </section>
 
         <section id="prices" className="py-20 bg-secondary/20">
           <div className="container">
-            <div className="text-center mb-12">
+            <motion.div className="text-center mb-12" {...fadeInUp}>
               <h2 className="text-3xl md:text-4xl font-bold mb-4">Цены на услуги</h2>
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
                 Прозрачное ценообразование без скрытых платежей
               </p>
-            </div>
-            <div className="max-w-4xl mx-auto space-y-4">
+            </motion.div>
+            <motion.div className="max-w-4xl mx-auto space-y-4" {...staggerContainer}>
               {[
                 { service: "Первичная консультация уролога-андролога", price: "3 000" },
                 { service: "Повторная консультация", price: "1 500" },
@@ -422,15 +430,17 @@ const Index = () => {
                 { service: "Усиленная наружная контрпульсация (1 сеанс)", price: "5 000" },
                 { service: "Контрпульсация (курс 20 процедур)", price: "90 000" }
               ].map((item, idx) => (
-                <Card key={idx}>
-                  <CardContent className="p-6 flex justify-between items-center">
-                    <span className="font-medium">{item.service}</span>
-                    <span className="text-2xl font-bold text-primary">{item.price} ₽</span>
-                  </CardContent>
-                </Card>
+                <motion.div key={idx} {...fadeInUp}>
+                  <Card>
+                    <CardContent className="p-6 flex justify-between items-center">
+                      <span className="font-medium">{item.service}</span>
+                      <span className="text-2xl font-bold text-primary">{item.price} ₽</span>
+                    </CardContent>
+                  </Card>
+                </motion.div>
               ))}
-            </div>
-            <div className="text-center mt-8">
+            </motion.div>
+            <motion.div className="text-center mt-8" {...fadeInUp}>
               <Card className="max-w-3xl mx-auto bg-gradient-to-r from-accent/10 to-primary/10">
                 <CardContent className="p-6">
                   <Icon name="BadgePercent" className="text-primary mx-auto mb-3" size={32} />
@@ -441,18 +451,18 @@ const Index = () => {
                   </p>
                 </CardContent>
               </Card>
-            </div>
+            </motion.div>
           </div>
         </section>
 
         <section id="faq" className="py-20">
           <div className="container">
-            <div className="text-center mb-12">
+            <motion.div className="text-center mb-12" {...fadeInUp}>
               <h2 className="text-3xl md:text-4xl font-bold mb-4">Частые вопросы</h2>
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
                 Ответы на важные вопросы о диагностике и лечении
               </p>
-            </div>
+            </motion.div>
             <div className="max-w-3xl mx-auto space-y-4">
               {[
                 {
@@ -502,13 +512,13 @@ const Index = () => {
 
         <section id="reviews" className="py-20 bg-secondary/20">
           <div className="container">
-            <div className="text-center mb-12">
+            <motion.div className="text-center mb-12" {...fadeInUp}>
               <h2 className="text-3xl md:text-4xl font-bold mb-4">Отзывы пациентов</h2>
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
                 Конфиденциальность — наш приоритет. Все отзывы публикуются анонимно
               </p>
-            </div>
-            <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+            </motion.div>
+            <motion.div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto" {...staggerContainer}>
               {[
                 {
                   initials: "А.С.",
@@ -529,37 +539,39 @@ const Index = () => {
                   rating: 5
                 }
               ].map((review, idx) => (
-                <Card key={idx}>
-                  <CardContent className="p-6 space-y-4">
-                    <div className="flex items-center justify-between">
-                      <div>
-                        <p className="font-semibold text-lg">{review.initials}</p>
-                        <p className="text-sm text-muted-foreground">{review.age}</p>
+                <motion.div key={idx} {...fadeInUp}>
+                  <Card className="h-full">
+                    <CardContent className="p-6 space-y-4">
+                      <div className="flex items-center justify-between">
+                        <div>
+                          <p className="font-semibold text-lg">{review.initials}</p>
+                          <p className="text-sm text-muted-foreground">{review.age}</p>
+                        </div>
+                        <div className="flex gap-1">
+                          {[...Array(review.rating)].map((_, i) => (
+                            <Icon key={i} name="Star" className="text-accent fill-accent" size={16} />
+                          ))}
+                        </div>
                       </div>
-                      <div className="flex gap-1">
-                        {[...Array(review.rating)].map((_, i) => (
-                          <Icon key={i} name="Star" className="text-accent fill-accent" size={16} />
-                        ))}
-                      </div>
-                    </div>
-                    <p className="text-muted-foreground">{review.text}</p>
-                  </CardContent>
-                </Card>
+                      <p className="text-muted-foreground">{review.text}</p>
+                    </CardContent>
+                  </Card>
+                </motion.div>
               ))}
-            </div>
+            </motion.div>
           </div>
         </section>
 
         <section id="contacts" className="py-20">
           <div className="container">
-            <div className="text-center mb-12">
+            <motion.div className="text-center mb-12" {...fadeInUp}>
               <h2 className="text-3xl md:text-4xl font-bold mb-4">Контакты</h2>
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
                 Запишитесь на консультацию — первый шаг к решению проблемы
               </p>
-            </div>
+            </motion.div>
             <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-              <div className="space-y-6">
+              <motion.div className="space-y-6" {...fadeInUp}>
                 <div className="rounded-lg overflow-hidden shadow-lg">
                   <img 
                     src="https://cdn.poehali.dev/projects/a237247e-eafd-4d28-ad02-d1e2f364317d/bucket/3883b04c-ad3c-4035-ad2d-c25b86e078cf.png" 
@@ -604,10 +616,11 @@ const Index = () => {
                   </div>
                 </CardContent>
               </Card>
-              </div>
-              <Card className="bg-gradient-to-br from-primary/5 to-accent/5">
-                <CardContent className="p-6">
-                  <h3 className="text-xl font-semibold mb-4">Записаться на приём</h3>
+              </motion.div>
+              <motion.div {...fadeInUp} transition={{ delay: 0.2, duration: 0.6 }}>
+                <Card className="bg-gradient-to-br from-primary/5 to-accent/5">
+                  <CardContent className="p-6">
+                    <h3 className="text-xl font-semibold mb-4">Записаться на приём</h3>
                   <form className="space-y-4">
                     <div>
                       <label className="text-sm font-medium mb-2 block">Ваше имя</label>
@@ -641,7 +654,8 @@ const Index = () => {
                     </p>
                   </form>
                 </CardContent>
-              </Card>
+                </Card>
+              </motion.div>
             </div>
           </div>
         </section>
