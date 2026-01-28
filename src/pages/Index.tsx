@@ -7,10 +7,40 @@ import Icon from "@/components/ui/icon";
 
 const Index = () => {
   const [activeSection, setActiveSection] = useState("home");
+  const [formData, setFormData] = useState({ name: "", phone: "", time_slot: "Утро (8:00 - 12:00)" });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<{ type: "success" | "error"; message: string } | null>(null);
 
   const scrollToSection = (id: string) => {
     setActiveSection(id);
     document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    setSubmitStatus(null);
+
+    try {
+      const response = await fetch("https://functions.poehali.dev/7f9ffff8-3d15-44cc-a514-19ea225e5a7b", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData)
+      });
+
+      const data = await response.json();
+
+      if (response.ok && data.success) {
+        setSubmitStatus({ type: "success", message: "Заявка отправлена! Мы свяжемся с вами в ближайшее время." });
+        setFormData({ name: "", phone: "", time_slot: "Утро (8:00 - 12:00)" });
+      } else {
+        setSubmitStatus({ type: "error", message: data.error || "Ошибка отправки. Попробуйте позвонить по телефону." });
+      }
+    } catch (error) {
+      setSubmitStatus({ type: "error", message: "Ошибка соединения. Попробуйте позвонить по телефону." });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const fadeInUp = {
@@ -621,13 +651,23 @@ const Index = () => {
                 <Card className="bg-gradient-to-br from-primary/5 to-accent/5">
                   <CardContent className="p-6">
                     <h3 className="text-xl font-semibold mb-4">Записаться на приём</h3>
-                  <form className="space-y-4">
+                  <form className="space-y-4" onSubmit={handleSubmit}>
+                    {submitStatus && (
+                      <div className={`p-4 rounded-md ${submitStatus.type === "success" ? "bg-green-50 text-green-800 border border-green-200" : "bg-red-50 text-red-800 border border-red-200"}`}>
+                        <p className="text-sm font-medium">{submitStatus.message}</p>
+                      </div>
+                    )}
                     <div>
                       <label className="text-sm font-medium mb-2 block">Ваше имя</label>
                       <input 
                         type="text" 
                         placeholder="Как к вам обращаться?" 
                         className="w-full px-4 py-2 rounded-md border border-input bg-background"
+                        value={formData.name}
+                        onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                        required
+                        minLength={2}
+                        disabled={isSubmitting}
                       />
                     </div>
                     <div>
@@ -636,18 +676,27 @@ const Index = () => {
                         type="tel" 
                         placeholder="+7 (___) ___-__-__" 
                         className="w-full px-4 py-2 rounded-md border border-input bg-background"
+                        value={formData.phone}
+                        onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
+                        required
+                        disabled={isSubmitting}
                       />
                     </div>
                     <div>
                       <label className="text-sm font-medium mb-2 block">Удобное время</label>
-                      <select className="w-full px-4 py-2 rounded-md border border-input bg-background">
+                      <select 
+                        className="w-full px-4 py-2 rounded-md border border-input bg-background"
+                        value={formData.time_slot}
+                        onChange={(e) => setFormData({ ...formData, time_slot: e.target.value })}
+                        disabled={isSubmitting}
+                      >
                         <option>Утро (8:00 - 12:00)</option>
                         <option>День (12:00 - 16:00)</option>
                         <option>Вечер (16:00 - 20:00)</option>
                       </select>
                     </div>
-                    <Button type="submit" className="w-full" size="lg">
-                      Отправить заявку
+                    <Button type="submit" className="w-full" size="lg" disabled={isSubmitting}>
+                      {isSubmitting ? "Отправка..." : "Отправить заявку"}
                     </Button>
                     <p className="text-xs text-muted-foreground text-center">
                       Нажимая кнопку, вы соглашаетесь с политикой конфиденциальности
