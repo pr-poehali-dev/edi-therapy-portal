@@ -174,28 +174,12 @@ const Index = () => {
                 Комплексное обследование для точного определения причин и выбора оптимального метода лечения
               </p>
             </div>
-            <div className="grid md:grid-cols-3 gap-6 mb-8">
-              <div className="rounded-lg overflow-hidden shadow-lg">
-                <img 
-                  src="https://cdn.poehali.dev/projects/a237247e-eafd-4d28-ad02-d1e2f364317d/files/5e60bf78-7325-46c0-ba58-0b720b989fbb.jpg" 
-                  alt="УЗИ диагностика" 
-                  className="w-full aspect-[4/3] object-cover"
-                />
-              </div>
-              <div className="rounded-lg overflow-hidden shadow-lg">
-                <img 
-                  src="https://cdn.poehali.dev/projects/a237247e-eafd-4d28-ad02-d1e2f364317d/files/f0c257ca-cced-4778-a882-c511f2bc2e2e.jpg" 
-                  alt="Лабораторная диагностика" 
-                  className="w-full aspect-[4/3] object-cover"
-                />
-              </div>
-              <div className="rounded-lg overflow-hidden shadow-lg">
-                <img 
-                  src="https://cdn.poehali.dev/projects/a237247e-eafd-4d28-ad02-d1e2f364317d/files/d6e0f777-e5e6-4382-a174-4af6adfe8976.jpg" 
-                  alt="Психологическое тестирование" 
-                  className="w-full aspect-[4/3] object-cover"
-                />
-              </div>
+            <div className="mb-8 rounded-lg overflow-hidden shadow-lg max-w-4xl mx-auto">
+              <img 
+                src="https://cdn.poehali.dev/projects/a237247e-eafd-4d28-ad02-d1e2f364317d/bucket/63604a21-3bf8-4a08-bb9e-1d7c51da4172.png" 
+                alt="Кабинет диагностики" 
+                className="w-full aspect-[16/6] object-cover object-center"
+              />
             </div>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
               {[
