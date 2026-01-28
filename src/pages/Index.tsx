@@ -291,21 +291,12 @@ const Index = () => {
 
             <div className="mt-16">
               <h3 className="text-2xl font-semibold text-center mb-6">Физиотерапевтические методы</h3>
-              <div className="grid md:grid-cols-2 gap-6 mb-8">
-                <div className="rounded-lg overflow-hidden shadow-lg">
-                  <img 
-                    src="https://cdn.poehali.dev/projects/a237247e-eafd-4d28-ad02-d1e2f364317d/files/ca07dfe4-e9b0-4c45-89bc-af333da6e6b7.jpg" 
-                    alt="Ударно-волновая терапия" 
-                    className="w-full aspect-[4/3] object-cover"
-                  />
-                </div>
-                <div className="rounded-lg overflow-hidden shadow-lg">
-                  <img 
-                    src="https://cdn.poehali.dev/projects/a237247e-eafd-4d28-ad02-d1e2f364317d/bucket/3883b04c-ad3c-4035-ad2d-c25b86e078cf.png" 
-                    alt="Ресепшн клиники" 
-                    className="w-full aspect-[4/3] object-cover"
-                  />
-                </div>
+              <div className="mb-8 rounded-lg overflow-hidden shadow-lg max-w-4xl mx-auto">
+                <img 
+                  src="https://cdn.poehali.dev/projects/a237247e-eafd-4d28-ad02-d1e2f364317d/bucket/06ea1f63-1109-41f5-b224-cf012d06e0b4.png" 
+                  alt="Физиотерапевтическое оборудование" 
+                  className="w-full aspect-[16/6] object-cover object-center"
+                />
               </div>
               <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
                 <Card className="overflow-hidden">
