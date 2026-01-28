@@ -238,7 +238,7 @@ const Index = () => {
                   alt="Инъекционные методики" 
                   className="w-full aspect-[16/6] object-cover object-center"
                 />
-              </div>
+              </motion.div>
               <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
               <Card className="overflow-hidden">
                 <div className="bg-gradient-to-br from-primary/10 to-accent/10 p-6">
