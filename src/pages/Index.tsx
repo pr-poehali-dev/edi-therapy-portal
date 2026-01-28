@@ -213,21 +213,12 @@ const Index = () => {
             
             <div className="mb-8">
               <h3 className="text-2xl font-semibold text-center mb-6">Инъекционные методики</h3>
-              <div className="grid md:grid-cols-2 gap-6 mb-8">
-                <div className="rounded-lg overflow-hidden shadow-lg">
-                  <img 
-                    src="https://cdn.poehali.dev/projects/a237247e-eafd-4d28-ad02-d1e2f364317d/files/bff3fe9f-f92c-444f-86f9-5acb4434c720.jpg" 
-                    alt="Интракавернозная терапия" 
-                    className="w-full aspect-[4/3] object-cover"
-                  />
-                </div>
-                <div className="rounded-lg overflow-hidden shadow-lg">
-                  <img 
-                    src="https://cdn.poehali.dev/projects/a237247e-eafd-4d28-ad02-d1e2f364317d/files/bc758557-22c0-4102-9a44-82d1291f5f2a.jpg" 
-                    alt="PRP-терапия" 
-                    className="w-full aspect-[4/3] object-cover"
-                  />
-                </div>
+              <div className="mb-8 rounded-lg overflow-hidden shadow-lg max-w-4xl mx-auto">
+                <img 
+                  src="https://cdn.poehali.dev/projects/a237247e-eafd-4d28-ad02-d1e2f364317d/bucket/02a12dbd-d0f7-4b6c-a235-ae0be33a6c5f.png" 
+                  alt="Инъекционные методики" 
+                  className="w-full aspect-[16/6] object-cover object-center"
+                />
               </div>
               <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
               <Card className="overflow-hidden">
