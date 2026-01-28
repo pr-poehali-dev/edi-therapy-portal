@@ -76,9 +76,9 @@ const Index = () => {
               <div className="relative">
                 <div className="mb-6 rounded-lg overflow-hidden shadow-xl">
                   <img 
-                    src="https://cdn.poehali.dev/projects/a237247e-eafd-4d28-ad02-d1e2f364317d/files/57243eaa-b027-4b9f-98b8-675bf2d678eb.jpg" 
-                    alt="Современная клиника" 
-                    className="w-full h-64 object-cover"
+                    src="https://cdn.poehali.dev/projects/a237247e-eafd-4d28-ad02-d1e2f364317d/bucket/a927ebea-01fc-4506-856d-2a8b95786133.png" 
+                    alt="Консультация врача" 
+                    className="w-full aspect-[16/6] object-cover object-center"
                   />
                 </div>
                 <Card className="p-6 bg-card/50 backdrop-blur">
