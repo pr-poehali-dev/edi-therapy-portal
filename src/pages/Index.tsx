@@ -593,8 +593,8 @@ const Index = () => {
               <div className="space-y-6">
                 <div className="rounded-lg overflow-hidden shadow-lg">
                   <img 
-                    src="https://cdn.poehali.dev/projects/a237247e-eafd-4d28-ad02-d1e2f364317d/files/0712ba0f-9546-40f7-bd56-0ac0e20888a3.jpg" 
-                    alt="Регистратура клиники" 
+                    src="https://cdn.poehali.dev/projects/a237247e-eafd-4d28-ad02-d1e2f364317d/bucket/3883b04c-ad3c-4035-ad2d-c25b86e078cf.png" 
+                    alt="Ресепшн клиники" 
                     className="w-full h-64 object-cover"
                   />
                 </div>
