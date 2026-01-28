@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
@@ -10,6 +11,20 @@ const Index = () => {
   const scrollToSection = (id: string) => {
     setActiveSection(id);
     document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+  };
+
+  const fadeInUp = {
+    initial: { opacity: 0, y: 60 },
+    whileInView: { opacity: 1, y: 0 },
+    viewport: { once: true },
+    transition: { duration: 0.6 }
+  };
+
+  const staggerContainer = {
+    initial: {},
+    whileInView: {},
+    viewport: { once: true },
+    transition: { staggerChildren: 0.1 }
   };
 
   return (
@@ -55,7 +70,7 @@ const Index = () => {
         <section id="home" className="py-20 md:py-32 bg-gradient-to-b from-secondary/30 to-background">
           <div className="container">
             <div className="grid md:grid-cols-2 gap-12 items-center">
-              <div className="space-y-6">
+              <motion.div className="space-y-6" {...fadeInUp}>
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight">
                   Эффективное лечение эректильной дисфункции
                 </h1>
@@ -72,8 +87,8 @@ const Index = () => {
                     Узнать о методах лечения
                   </Button>
                 </div>
-              </div>
-              <div className="relative">
+              </motion.div>
+              <motion.div className="relative" {...fadeInUp} transition={{ delay: 0.2, duration: 0.6 }}>
                 <div className="mb-6 rounded-lg overflow-hidden shadow-xl">
                   <img 
                     src="https://cdn.poehali.dev/projects/a237247e-eafd-4d28-ad02-d1e2f364317d/bucket/a927ebea-01fc-4506-856d-2a8b95786133.png" 
@@ -114,27 +129,27 @@ const Index = () => {
                     </div>
                   </CardContent>
                 </Card>
-              </div>
+              </motion.div>
             </div>
           </div>
         </section>
 
         <section id="types" className="py-20">
           <div className="container">
-            <div className="text-center mb-12">
+            <motion.div className="text-center mb-12" {...fadeInUp}>
               <h2 className="text-3xl md:text-4xl font-bold mb-4">Виды эректильной дисфункции</h2>
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
                 Понимание причины проблемы — первый шаг к её успешному решению
               </p>
-            </div>
-            <div className="mb-8 rounded-lg overflow-hidden shadow-lg max-w-4xl mx-auto">
+            </motion.div>
+            <motion.div className="mb-8 rounded-lg overflow-hidden shadow-lg max-w-4xl mx-auto" {...fadeInUp}>
               <img 
                 src="https://cdn.poehali.dev/projects/a237247e-eafd-4d28-ad02-d1e2f364317d/bucket/6a48e243-29d2-443a-82a3-462d1846289e.png" 
                 alt="Консультация врача" 
                 className="w-full aspect-[16/6] object-cover object-center"
               />
-            </div>
-            <div className="grid md:grid-cols-3 gap-6">
+            </motion.div>
+            <motion.div className="grid md:grid-cols-3 gap-6" {...staggerContainer}>
               {[
                 {
                   icon: "Brain",
@@ -152,68 +167,72 @@ const Index = () => {
                   description: "Комбинация психологических и физических причин. Требует комплексного подхода к лечению."
                 }
               ].map((type, idx) => (
-                <Card key={idx} className="hover:shadow-lg transition-shadow">
-                  <CardContent className="p-6 space-y-4">
+                <motion.div key={idx} {...fadeInUp}>
+                  <Card className="hover:shadow-lg transition-shadow h-full">
+                    <CardContent className="p-6 space-y-4">
                     <div className="h-14 w-14 rounded-full bg-primary/10 flex items-center justify-center">
                       <Icon name={type.icon} className="text-primary" size={28} />
                     </div>
                     <h3 className="text-xl font-semibold">{type.title}</h3>
                     <p className="text-muted-foreground">{type.description}</p>
-                  </CardContent>
-                </Card>
+                    </CardContent>
+                  </Card>
+                </motion.div>
               ))}
-            </div>
+            </motion.div>
           </div>
         </section>
 
         <section id="diagnostics" className="py-20 bg-secondary/20">
           <div className="container">
-            <div className="text-center mb-12">
+            <motion.div className="text-center mb-12" {...fadeInUp}>
               <h2 className="text-3xl md:text-4xl font-bold mb-4">Диагностика</h2>
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
                 Комплексное обследование для точного определения причин и выбора оптимального метода лечения
               </p>
-            </div>
-            <div className="mb-8 rounded-lg overflow-hidden shadow-lg max-w-4xl mx-auto">
+            </motion.div>
+            <motion.div className="mb-8 rounded-lg overflow-hidden shadow-lg max-w-4xl mx-auto" {...fadeInUp}>
               <img 
                 src="https://cdn.poehali.dev/projects/a237247e-eafd-4d28-ad02-d1e2f364317d/bucket/63604a21-3bf8-4a08-bb9e-1d7c51da4172.png" 
                 alt="Кабинет диагностики" 
                 className="w-full aspect-[16/6] object-cover object-center"
               />
-            </div>
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            </motion.div>
+            <motion.div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6" {...staggerContainer}>
               {[
                 { icon: "Stethoscope", title: "Консультация уролога-андролога", desc: "Сбор анамнеза и первичный осмотр" },
                 { icon: "TestTube", title: "Лабораторная диагностика", desc: "Анализы крови на гормоны и биохимию" },
                 { icon: "Scan", title: "УЗИ сосудов", desc: "Допплерография полового члена" },
                 { icon: "FileText", title: "Психологическое тестирование", desc: "Выявление психогенных факторов" }
               ].map((item, idx) => (
-                <Card key={idx}>
-                  <CardContent className="p-6 text-center space-y-3">
-                    <div className="h-14 w-14 rounded-full bg-accent/20 flex items-center justify-center mx-auto">
-                      <Icon name={item.icon} className="text-accent" size={28} />
-                    </div>
-                    <h3 className="font-semibold">{item.title}</h3>
-                    <p className="text-sm text-muted-foreground">{item.desc}</p>
-                  </CardContent>
-                </Card>
+                <motion.div key={idx} {...fadeInUp}>
+                  <Card className="h-full">
+                    <CardContent className="p-6 text-center space-y-3">
+                      <div className="h-14 w-14 rounded-full bg-accent/20 flex items-center justify-center mx-auto">
+                        <Icon name={item.icon} className="text-accent" size={28} />
+                      </div>
+                      <h3 className="font-semibold">{item.title}</h3>
+                      <p className="text-sm text-muted-foreground">{item.desc}</p>
+                    </CardContent>
+                  </Card>
+                </motion.div>
               ))}
-            </div>
+            </motion.div>
           </div>
         </section>
 
         <section id="treatment" className="py-20">
           <div className="container">
-            <div className="text-center mb-12">
+            <motion.div className="text-center mb-12" {...fadeInUp}>
               <h2 className="text-3xl md:text-4xl font-bold mb-4">Современные методы лечения</h2>
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
                 Комплексный подход: инъекционные методики и физиотерапия
               </p>
-            </div>
+            </motion.div>
             
             <div className="mb-8">
-              <h3 className="text-2xl font-semibold text-center mb-6">Инъекционные методики</h3>
-              <div className="mb-8 rounded-lg overflow-hidden shadow-lg max-w-4xl mx-auto">
+              <motion.h3 className="text-2xl font-semibold text-center mb-6" {...fadeInUp}>Инъекционные методики</motion.h3>
+              <motion.div className="mb-8 rounded-lg overflow-hidden shadow-lg max-w-4xl mx-auto" {...fadeInUp}>
                 <img 
                   src="https://cdn.poehali.dev/projects/a237247e-eafd-4d28-ad02-d1e2f364317d/bucket/02a12dbd-d0f7-4b6c-a235-ae0be33a6c5f.png" 
                   alt="Инъекционные методики" 
