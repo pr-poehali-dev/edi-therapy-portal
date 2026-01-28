@@ -127,28 +127,12 @@ const Index = () => {
                 Понимание причины проблемы — первый шаг к её успешному решению
               </p>
             </div>
-            <div className="grid md:grid-cols-3 gap-6 mb-8">
-              <div className="rounded-lg overflow-hidden shadow-lg">
-                <img 
-                  src="https://cdn.poehali.dev/projects/a237247e-eafd-4d28-ad02-d1e2f364317d/files/ad077928-5ace-4d7c-87f6-79a134b1a061.jpg" 
-                  alt="Консультация врача" 
-                  className="w-full aspect-[4/3] object-cover"
-                />
-              </div>
-              <div className="rounded-lg overflow-hidden shadow-lg">
-                <img 
-                  src="https://cdn.poehali.dev/projects/a237247e-eafd-4d28-ad02-d1e2f364317d/files/3929e40e-b710-40d0-9ceb-e7526c62dec0.jpg" 
-                  alt="Психогенные факторы" 
-                  className="w-full aspect-[4/3] object-cover"
-                />
-              </div>
-              <div className="rounded-lg overflow-hidden shadow-lg">
-                <img 
-                  src="https://cdn.poehali.dev/projects/a237247e-eafd-4d28-ad02-d1e2f364317d/files/cec10daf-202a-459c-b354-b09a55af948f.jpg" 
-                  alt="Органические причины" 
-                  className="w-full aspect-[4/3] object-cover"
-                />
-              </div>
+            <div className="mb-8 rounded-lg overflow-hidden shadow-lg max-w-4xl mx-auto">
+              <img 
+                src="https://cdn.poehali.dev/projects/a237247e-eafd-4d28-ad02-d1e2f364317d/bucket/6a48e243-29d2-443a-82a3-462d1846289e.png" 
+                alt="Консультация врача" 
+                className="w-full aspect-[16/6] object-cover object-center"
+              />
             </div>
             <div className="grid md:grid-cols-3 gap-6">
               {[
