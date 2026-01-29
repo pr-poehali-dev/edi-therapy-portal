@@ -346,7 +346,7 @@ const Index = () => {
               <motion.h3 className="text-2xl font-semibold text-center mb-6" {...fadeInUp}>Физиотерапевтические методы</motion.h3>
               <motion.div className="mb-8 rounded-lg overflow-hidden shadow-lg max-w-4xl mx-auto" {...fadeInUp}>
                 <img 
-                  src="https://cdn.poehali.dev/projects/a237247e-eafd-4d28-ad02-d1e2f364317d/bucket/06ea1f63-1109-41f5-b224-cf012d06e0b4.png" 
+                  src="https://cdn.poehali.dev/projects/a237247e-eafd-4d28-ad02-d1e2f364317d/bucket/bf19f5c0-807b-429f-a13c-cbd49847e669.png" 
                   alt="Физиотерапевтическое оборудование" 
                   className="w-full aspect-[16/6] object-cover object-center"
                 />
