@@ -264,7 +264,7 @@ const Index = () => {
               <motion.h3 className="text-2xl font-semibold text-center mb-6" {...fadeInUp}>Инъекционные методики</motion.h3>
               <motion.div className="mb-8 rounded-lg overflow-hidden shadow-lg max-w-4xl mx-auto" {...fadeInUp}>
                 <img 
-                  src="https://cdn.poehali.dev/projects/a237247e-eafd-4d28-ad02-d1e2f364317d/bucket/02a12dbd-d0f7-4b6c-a235-ae0be33a6c5f.png" 
+                  src="https://cdn.poehali.dev/projects/a237247e-eafd-4d28-ad02-d1e2f364317d/bucket/ebbb6907-7a6b-4220-baa4-8a08c4708a9a.png" 
                   alt="Инъекционные методики" 
                   className="w-full aspect-[16/6] object-cover object-center"
                 />
