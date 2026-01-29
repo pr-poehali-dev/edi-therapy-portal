@@ -121,7 +121,7 @@ const Index = () => {
               <motion.div className="relative" {...fadeInUp} transition={{ delay: 0.2, duration: 0.6 }}>
                 <div className="mb-6 rounded-lg overflow-hidden shadow-xl">
                   <img 
-                    src="https://cdn.poehali.dev/projects/a237247e-eafd-4d28-ad02-d1e2f364317d/bucket/a927ebea-01fc-4506-856d-2a8b95786133.png" 
+                    src="https://cdn.poehali.dev/projects/a237247e-eafd-4d28-ad02-d1e2f364317d/bucket/535933d6-02b7-4c7f-8d31-818f63a93af2.png" 
                     alt="Консультация врача" 
                     className="w-full aspect-[16/6] object-cover object-center"
                   />
