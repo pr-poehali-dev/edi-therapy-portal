@@ -121,7 +121,7 @@ const Index = () => {
               <motion.div className="relative" {...fadeInUp} transition={{ delay: 0.2, duration: 0.6 }}>
                 <div className="mb-6 rounded-lg overflow-hidden shadow-xl">
                   <img 
-                    src="https://cdn.poehali.dev/projects/a237247e-eafd-4d28-ad02-d1e2f364317d/bucket/535933d6-02b7-4c7f-8d31-818f63a93af2.png" 
+                    src="https://cdn.poehali.dev/projects/a237247e-eafd-4d28-ad02-d1e2f364317d/bucket/aca7d6b1-a6d7-4bee-b266-dc171fec9dd7.png" 
                     alt="Консультация врача" 
                     className="w-full aspect-[16/6] object-cover object-center"
                   />
@@ -174,7 +174,7 @@ const Index = () => {
             </motion.div>
             <motion.div className="mb-8 rounded-lg overflow-hidden shadow-lg max-w-4xl mx-auto" {...fadeInUp}>
               <img 
-                src="https://cdn.poehali.dev/projects/a237247e-eafd-4d28-ad02-d1e2f364317d/bucket/bf0fbf11-d605-4dd7-a324-8c24a6d7687d.png" 
+                src="https://cdn.poehali.dev/projects/a237247e-eafd-4d28-ad02-d1e2f364317d/bucket/52813b36-f38f-42e1-8625-721d99c53802.png" 
                 alt="Консультация врача" 
                 className="w-full aspect-[16/6] object-cover object-center"
               />
@@ -223,7 +223,7 @@ const Index = () => {
             </motion.div>
             <motion.div className="mb-8 rounded-lg overflow-hidden shadow-lg max-w-4xl mx-auto" {...fadeInUp}>
               <img 
-                src="https://cdn.poehali.dev/projects/a237247e-eafd-4d28-ad02-d1e2f364317d/bucket/535933d6-02b7-4c7f-8d31-818f63a93af2.png" 
+                src="https://cdn.poehali.dev/projects/a237247e-eafd-4d28-ad02-d1e2f364317d/bucket/fc86f03f-ce55-4ade-918e-22f957143249.png" 
                 alt="Кабинет диагностики" 
                 className="w-full aspect-[16/6] object-cover object-center"
               />
@@ -264,7 +264,7 @@ const Index = () => {
               <motion.h3 className="text-2xl font-semibold text-center mb-6" {...fadeInUp}>Инъекционные методики</motion.h3>
               <motion.div className="mb-8 rounded-lg overflow-hidden shadow-lg max-w-4xl mx-auto" {...fadeInUp}>
                 <img 
-                  src="https://cdn.poehali.dev/projects/a237247e-eafd-4d28-ad02-d1e2f364317d/bucket/02a12dbd-d0f7-4b6c-a235-ae0be33a6c5f.png" 
+                  src="https://cdn.poehali.dev/projects/a237247e-eafd-4d28-ad02-d1e2f364317d/bucket/3d3fa7b7-6dcd-413b-bfce-4c3699137953.png" 
                   alt="Инъекционные методики" 
                   className="w-full aspect-[16/6] object-cover object-center"
                 />
@@ -346,7 +346,7 @@ const Index = () => {
               <motion.h3 className="text-2xl font-semibold text-center mb-6" {...fadeInUp}>Физиотерапевтические методы</motion.h3>
               <motion.div className="mb-8 rounded-lg overflow-hidden shadow-lg max-w-4xl mx-auto" {...fadeInUp}>
                 <img 
-                  src="https://cdn.poehali.dev/projects/a237247e-eafd-4d28-ad02-d1e2f364317d/bucket/06ea1f63-1109-41f5-b224-cf012d06e0b4.png" 
+                  src="https://cdn.poehali.dev/projects/a237247e-eafd-4d28-ad02-d1e2f364317d/bucket/a1d53294-6b6c-4cbb-96aa-f0cedfbeaaa6.png" 
                   alt="Физиотерапевтическое оборудование" 
                   className="w-full aspect-[16/6] object-cover object-center"
                 />
