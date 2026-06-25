@@ -450,8 +450,8 @@ const Index = () => {
             </motion.div>
             <motion.div className="max-w-4xl mx-auto space-y-4" {...staggerContainer}>
               {[
-                { service: "Первичная консультация уролога-андролога", price: "3 000" },
-                { service: "Повторная консультация", price: "1 500" },
+                { service: "Первичная консультация уролога-андролога", price: "4 000" },
+                { service: "Повторная консультация", price: "2 000" },
                 { service: "Комплексная диагностика ЭД", price: "14 800" },
                 { service: "Интракавернозная терапия (1 процедура)", price: "3 500" },
                 { service: "PRP-терапия (1 процедура)", price: "20 000" },
