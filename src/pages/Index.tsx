@@ -90,7 +90,7 @@ const Index = () => {
               </button>
             ))}
           </nav>
-          <Button onClick={() => scrollToSection("contacts")}>
+          <Button size="sm" onClick={() => scrollToSection("contacts")}>
             Записаться на приём
           </Button>
         </div>
