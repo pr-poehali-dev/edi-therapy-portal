@@ -59,6 +59,14 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <div className="w-full bg-primary text-primary-foreground py-2.5 px-4 text-center">
+        <p className="text-sm md:text-base font-semibold">
+          АКЦИЯ до конца сентября! СКИДКА 20% на первичный приём и обследование! {" "}
+          <a href="tel:+74957083800" className="underline underline-offset-2 hover:no-underline">
+            ЗВОНИТЕ +7-495-708-38-00
+          </a>
+        </p>
+      </div>
       <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="container flex h-16 items-center justify-between">
           <div className="flex items-center gap-4">
@@ -116,17 +124,6 @@ const Index = () => {
                   <Button size="lg" variant="outline" onClick={() => scrollToSection("treatment")}>
                     Узнать о методах лечения
                   </Button>
-                </div>
-                <div className="rounded-lg border-2 border-primary bg-primary/5 p-4 flex items-start gap-3">
-                  <Icon name="Sparkles" className="text-primary shrink-0 mt-1" size={24} />
-                  <div>
-                    <p className="font-bold text-primary">
-                      АКЦИЯ до конца сентября! СКИДКА 20% на первичный приём и обследование!
-                    </p>
-                    <a href="tel:+74957083800" className="font-semibold hover:underline">
-                      ЗВОНИТЕ +7-495-708-38-00
-                    </a>
-                  </div>
                 </div>
               </motion.div>
               <motion.div className="relative" {...fadeInUp} transition={{ delay: 0.2, duration: 0.6 }}>
