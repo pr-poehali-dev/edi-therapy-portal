@@ -61,7 +61,7 @@ const Index = () => {
     <div className="min-h-screen bg-background">
       <div className="w-full bg-primary text-primary-foreground py-2.5 px-4 text-center">
         <p className="text-sm md:text-base font-semibold">
-          АКЦИЯ до конца сентября! СКИДКА 20% на первичный приём и обследование! {" "}
+          АКЦИЯ до конца сентября! СКИДКА 20% на первичный приём и обследование в день обращения! {" "}
           <a href="tel:+74957083800" className="underline underline-offset-2 hover:no-underline">
             ЗВОНИТЕ +7-495-708-38-00
           </a>
@@ -613,7 +613,7 @@ const Index = () => {
                 <Icon name="Sparkles" className="text-primary shrink-0 mt-1" size={24} />
                 <div>
                   <p className="font-bold text-primary">
-                    АКЦИЯ до конца сентября! СКИДКА 20% на первичный приём и обследование!
+                    АКЦИЯ до конца сентября! СКИДКА 20% на первичный приём и обследование в день обращения!
                   </p>
                   <a href="tel:+74957083800" className="font-semibold hover:underline">
                     ЗВОНИТЕ +7-495-708-38-00
