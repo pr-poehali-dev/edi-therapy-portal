@@ -117,6 +117,17 @@ const Index = () => {
                     Узнать о методах лечения
                   </Button>
                 </div>
+                <div className="rounded-lg border-2 border-primary bg-primary/5 p-4 flex items-start gap-3">
+                  <Icon name="Sparkles" className="text-primary shrink-0 mt-1" size={24} />
+                  <div>
+                    <p className="font-bold text-primary">
+                      АКЦИЯ до конца сентября! СКИДКА 20% на первичный приём и обследование!
+                    </p>
+                    <a href="tel:+74957083800" className="font-semibold hover:underline">
+                      ЗВОНИТЕ +7-495-708-38-00
+                    </a>
+                  </div>
+                </div>
               </motion.div>
               <motion.div className="relative" {...fadeInUp} transition={{ delay: 0.2, duration: 0.6 }}>
                 <div className="mb-6 rounded-lg overflow-hidden shadow-xl">
