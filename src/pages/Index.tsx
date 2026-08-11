@@ -625,7 +625,7 @@ const Index = () => {
               <motion.div className="space-y-6" {...fadeInUp}>
                 <div className="rounded-lg overflow-hidden shadow-lg">
                   <img 
-                    src="https://cdn.poehali.dev/projects/a237247e-eafd-4d28-ad02-d1e2f364317d/bucket/3883b04c-ad3c-4035-ad2d-c25b86e078cf.png" 
+                    src="https://cdn.poehali.dev/projects/a237247e-eafd-4d28-ad02-d1e2f364317d/files/5596863e-e8be-48bb-8abd-c689baec1a69.jpg" 
                     alt="Ресепшн клиники" 
                     className="w-full aspect-[4/3] object-cover"
                   />
