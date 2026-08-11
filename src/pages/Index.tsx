@@ -59,14 +59,6 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-background">
-      <div className="w-full bg-primary text-primary-foreground py-2.5 px-4 text-center">
-        <p className="text-sm md:text-base font-semibold">
-          АКЦИЯ до конца сентября! СКИДКА 20% на первичный приём и обследование в день обращения! {" "}
-          <a href="tel:+74957083800" className="underline underline-offset-2 hover:no-underline">
-            ЗВОНИТЕ +7-495-708-38-00
-          </a>
-        </p>
-      </div>
       <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="container flex h-16 items-center justify-between">
           <div className="flex items-center gap-4">
@@ -168,6 +160,14 @@ const Index = () => {
                   </CardContent>
                 </Card>
               </motion.div>
+            </div>
+            <div className="w-full bg-primary text-primary-foreground py-5 px-4 text-center rounded-lg mt-16">
+              <p className="text-lg md:text-xl font-semibold">
+                АКЦИЯ до конца сентября! СКИДКА 20% на первичный приём и обследование в день обращения! {" "}
+                <a href="tel:+74957083800" className="underline underline-offset-2 hover:no-underline">
+                  ЗВОНИТЕ +7-495-708-38-00
+                </a>
+              </p>
             </div>
           </div>
         </section>
